@@ -45,7 +45,7 @@ h1 {
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
-  background: #c4dafa;
+  background: #a7bfc7;
   color: black;
   font-weight: bold;
   transition: all 0.25s ease;
@@ -56,13 +56,13 @@ h1 {
 }
 
 .ramo.aprobado {
-  background: #4d82bc;
+  background: #688391;
   color: white;
   text-decoration: line-through;
 }
 
 .ramo.bloqueado {
-  background: #bfbfbf;
-  color: #555;
+  background: #c8dfe2;
+  color: #black;
   cursor: not-allowed;
 }
