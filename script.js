@@ -49,4 +49,3 @@ h1 {
   color: #555;
   cursor: not-allowed;
 }
-
