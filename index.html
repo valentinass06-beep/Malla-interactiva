@@ -6,134 +6,135 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Malla Medicina – Universidad de Chile</h1>
 
-  <div class="malla">
+<h1>Malla Medicina – Universidad de Chile</h1>
 
-    <div class="semestre">
-      <h2>1° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="matematicas">Matemáticas</div>
-        <div class="ramo" data-id="quimica">Química</div>
-        <div class="ramo" data-id="anatomia1">Anatomía I</div>
-        <div class="ramo" data-id="intro_profesion">Introducción a la Profesión Médica</div>
-        <div class="ramo" data-id="med_sociedad">Medicina y Sociedad</div>
-      </div>
+<div class="malla">
+
+  <div class="semestre">
+    <h2>1°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="matematicas">Matemáticas</div>
+      <div class="ramo" data-id="quimica">Química</div>
+      <div class="ramo" data-id="anatomia1">Anatomía I</div>
+      <div class="ramo" data-id="intro_profesion">Introducción a la Profesión Médica</div>
+      <div class="ramo" data-id="med_sociedad">Medicina y Sociedad</div>
     </div>
-
-    <div class="semestre">
-      <h2>2° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="fisica">Física</div>
-        <div class="ramo" data-id="biocel" data-prereq="quimica">Biología Celular y Molecular</div>
-        <div class="ramo" data-id="anatomia2" data-prereq="anatomia1">Anatomía II</div>
-        <div class="ramo" data-id="histo">Histología y Embriología</div>
-        <div class="ramo" data-id="med_persona" data-prereq="med_sociedad">Medicina, Persona y Sociedad</div>
-        <div class="ramo" data-id="salud_publica">Introducción a la Salud Pública</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>3° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="fisio1" data-prereq="fisica,biocel,anatomia2">Fisiología I</div>
-        <div class="ramo" data-id="bioquimica" data-prereq="biocel">Bioquímica</div>
-        <div class="ramo" data-id="genetica" data-prereq="biocel">Genética</div>
-        <div class="ramo" data-id="invest1">Unidad de Investigación I</div>
-        <div class="ramo" data-id="semiologia1" data-prereq="med_persona,intro_profesion">Semiología I</div>
-        <div class="ramo" data-id="bioetica">Bioética</div>
-        <div class="ramo" data-id="bioestadistica" data-prereq="matematicas">Bioestadística</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>4° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="fisio2" data-prereq="fisio1,bioquimica">Fisiología II</div>
-        <div class="ramo" data-id="inmunologia" data-prereq="genetica">Inmunología</div>
-        <div class="ramo" data-id="med_evolutiva" data-prereq="genetica">Medicina Evolutiva</div>
-        <div class="ramo" data-id="invest2" data-prereq="invest1">Unidad de Investigación II</div>
-        <div class="ramo" data-id="semiologia2" data-prereq="semiologia1,anatomia2">Semiología II</div>
-        <div class="ramo" data-id="casos1">Casos Integradores I</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>5° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="fisiopat1" data-prereq="fisio2">Fisiopatología I</div>
-        <div class="ramo" data-id="farmaco1" data-prereq="fisio2,bioquimica">Farmacología I</div>
-        <div class="ramo" data-id="agentes1" data-prereq="fisio2,inmunologia">Agentes Vivos de la Enfermedad I</div>
-        <div class="ramo" data-id="interna1" data-prereq="fisio2,semiologia2">Medicina Interna I</div>
-        <div class="ramo" data-id="etica1" data-prereq="bioetica">Ética Clínica I</div>
-        <div class="ramo" data-id="epidemio_desc" data-prereq="salud_publica,bioestadistica">Epidemiología Descriptiva</div>
-        <div class="ramo" data-id="modulo1">Módulo Integrado Interdisciplinario I</div>
-      </div>
-    </div>
-
   </div>
 
-  <script src="script.js"></script>
+  <div class="semestre">
+    <h2>2°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="fisica">Física</div>
+      <div class="ramo" data-id="biocel" data-prereq="quimica">Biología Celular y Molecular</div>
+      <div class="ramo" data-id="anatomia2" data-prereq="anatomia1">Anatomía II</div>
+      <div class="ramo" data-id="histo">Histología y Embriología</div>
+      <div class="ramo" data-id="med_persona" data-prereq="med_sociedad">Medicina, Persona y Sociedad</div>
+      <div class="ramo" data-id="salud_publica">Introducción a la Salud Pública</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>3°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="fisio1" data-prereq="fisica,biocel,anatomia2">Fisiología I</div>
+      <div class="ramo" data-id="bioquimica" data-prereq="biocel">Bioquímica</div>
+      <div class="ramo" data-id="genetica" data-prereq="biocel">Genética</div>
+      <div class="ramo" data-id="invest1">Unidad de Investigación I</div>
+      <div class="ramo" data-id="semiologia1" data-prereq="med_persona,intro_profesion">Semiología I</div>
+      <div class="ramo" data-id="bioetica">Bioética</div>
+      <div class="ramo" data-id="bioestadistica" data-prereq="matematicas">Bioestadística</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>4°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="fisio2" data-prereq="fisio1,bioquimica">Fisiología II</div>
+      <div class="ramo" data-id="inmunologia" data-prereq="genetica">Inmunología</div>
+      <div class="ramo" data-id="med_evolutiva" data-prereq="genetica">Medicina Evolutiva</div>
+      <div class="ramo" data-id="invest2" data-prereq="invest1">Unidad de Investigación II</div>
+      <div class="ramo" data-id="semiologia2" data-prereq="semiologia1,anatomia2">Semiología II</div>
+      <div class="ramo" data-id="casos1">Casos Integradores I</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>5°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="fisiopat1" data-prereq="fisio2">Fisiopatología I</div>
+      <div class="ramo" data-id="farmaco1" data-prereq="fisio2,bioquimica">Farmacología I</div>
+      <div class="ramo" data-id="agentes1" data-prereq="fisio2,inmunologia">Agentes Vivos de la Enfermedad I</div>
+      <div class="ramo" data-id="interna1" data-prereq="fisio2,semiologia2">Medicina Interna I</div>
+      <div class="ramo" data-id="etica1" data-prereq="bioetica">Ética Clínica I</div>
+      <div class="ramo" data-id="epidemio_desc" data-prereq="salud_publica,bioestadistica">Epidemiología Descriptiva</div>
+      <div class="ramo" data-id="modulo1">Módulo Integrado I</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>6°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="fisiopat2" data-prereq="fisiopat1">Fisiopatología II</div>
+      <div class="ramo" data-id="farmaco2" data-prereq="farmaco1,fisiopat1">Farmacología II</div>
+      <div class="ramo" data-id="agentes2" data-prereq="agentes1">Agentes Vivos II</div>
+      <div class="ramo" data-id="interna2" data-prereq="interna1">Medicina Interna II</div>
+      <div class="ramo" data-id="epidemio_analitica" data-prereq="epidemio_desc">Epidemiología Analítica</div>
+      <div class="ramo" data-id="casos2" data-prereq="semiologia2">Casos Integradores II</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>7°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="mgf1" data-prereq="interna2">Medicina General Familiar I</div>
+      <div class="ramo" data-id="cirugia" data-prereq="interna2">Cirugía</div>
+      <div class="ramo" data-id="geriatria" data-prereq="interna2">Geriatría</div>
+      <div class="ramo" data-id="anat_pato" data-prereq="interna1,histo,anatomia2">Anatomía Patológica</div>
+      <div class="ramo" data-id="etica2" data-prereq="etica1">Ética Clínica II</div>
+      <div class="ramo" data-id="casos3" data-prereq="casos2,interna2">Casos Integradores III</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>8°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="mgf2" data-prereq="mgf1">Medicina General Familiar II</div>
+      <div class="ramo" data-id="esp1" data-prereq="interna2">Especialidades Médicas I</div>
+      <div class="ramo" data-id="neurologia" data-prereq="interna2">Neurología</div>
+      <div class="ramo" data-id="med_legal" data-prereq="interna2">Medicina Legal</div>
+      <div class="ramo" data-id="diagnostico" data-prereq="epidemio_desc">Diagnóstico Situacional</div>
+      <div class="ramo" data-id="seg_social" data-prereq="epidemio_desc">Seguridad Social</div>
+      <div class="ramo" data-id="electivo1">Electivo I</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>9°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="pediatria" data-prereq="cirugia">Pediatría</div>
+      <div class="ramo" data-id="esp2" data-prereq="cirugia">Especialidades Médicas II</div>
+      <div class="ramo" data-id="urgencia" data-prereq="cirugia">Medicina de Urgencia</div>
+      <div class="ramo" data-id="gestion1" data-prereq="seg_social">Gestión I</div>
+      <div class="ramo" data-id="electivo2">Electivo II</div>
+      <div class="ramo" data-id="casos4" data-prereq="casos3">Casos Integradores IV</div>
+    </div>
+  </div>
+
+  <div class="semestre">
+    <h2>10°</h2>
+    <div class="ramos">
+      <div class="ramo" data-id="gine" data-prereq="cirugia">Ginecología y Obstetricia</div>
+      <div class="ramo" data-id="psiquiatria" data-prereq="interna2">Psiquiatría</div>
+      <div class="ramo" data-id="psiq_inf" data-prereq="mgf2">Psiquiatría Infantil</div>
+      <div class="ramo" data-id="gestion2" data-prereq="gestion1">Gestión II</div>
+      <div class="ramo" data-id="electivo3">Electivo III</div>
+      <div class="ramo" data-id="modulo2" data-prereq="modulo1">Módulo Integrado II</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-    <div class="semestre">
-      <h2>6° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="fisiopat2" data-prereq="fisiopat1">Fisiopatología II</div>
-        <div class="ramo" data-id="farmaco2" data-prereq="farmaco1,fisiopat1">Farmacología II</div>
-        <div class="ramo" data-id="agentes2" data-prereq="agentes1">Agentes Vivos de la Enfermedad II</div>
-        <div class="ramo" data-id="interna2" data-prereq="interna1">Medicina Interna II</div>
-        <div class="ramo" data-id="epidemio_analitica" data-prereq="epidemio_desc">Epidemiología Analítica</div>
-        <div class="ramo" data-id="casos2" data-prereq="semiologia2">Casos Integradores II</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>7° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="mgf1" data-prereq="interna2">Medicina General Familiar I</div>
-        <div class="ramo" data-id="cirugia" data-prereq="interna2">Cirugía</div>
-        <div class="ramo" data-id="geriatria" data-prereq="interna2">Geriatría</div>
-        <div class="ramo" data-id="anat_pato" data-prereq="interna1,histo,anatomia2">Anatomía Patológica</div>
-        <div class="ramo" data-id="etica2" data-prereq="etica1">Ética Clínica II</div>
-        <div class="ramo" data-id="casos3" data-prereq="casos2,interna2">Casos Integradores III</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>8° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="mgf2" data-prereq="mgf1">Medicina General Familiar II</div>
-        <div class="ramo" data-id="esp1" data-prereq="interna2">Especialidades Médicas y Quirúrgicas I</div>
-        <div class="ramo" data-id="neurologia" data-prereq="interna2">Neurología</div>
-        <div class="ramo" data-id="med_legal" data-prereq="interna2">Medicina Legal</div>
-        <div class="ramo" data-id="diagnostico" data-prereq="epidemio_desc">Diagnóstico en Situación de Salud</div>
-        <div class="ramo" data-id="seg_social" data-prereq="epidemio_desc">Seguridad Social y Atención de Salud</div>
-        <div class="ramo" data-id="electivo1">Electivo Profesional I</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>9° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="pediatria" data-prereq="cirugia">Pediatría y Cirugía Infantil</div>
-        <div class="ramo" data-id="esp2" data-prereq="cirugia">Especialidades Médicas y Quirúrgicas II</div>
-        <div class="ramo" data-id="urgencia" data-prereq="cirugia">Medicina de Urgencias</div>
-        <div class="ramo" data-id="gestion1" data-prereq="seg_social">Gestión I</div>
-        <div class="ramo" data-id="electivo2">Electivo Profesional II</div>
-        <div class="ramo" data-id="casos4" data-prereq="casos3">Casos Integradores IV</div>
-      </div>
-    </div>
-
-    <div class="semestre">
-      <h2>10° Semestre</h2>
-      <div class="ramos">
-        <div class="ramo" data-id="gine" data-prereq="cirugia">Ginecología y Obstetricia</div>
-        <div class="ramo" data-id="psiquiatria" data-prereq="interna2">Psiquiatría</div>
-        <div class="ramo" data-id="psiq_inf" data-prereq="mgf2">Psiquiatría Infantil</div>
-        <div class="ramo" data-id="gestion2" data-prereq="gestion1">Gestión II</div>
-        <div class="ramo" data-id="electivo3">Electivo Profesional III</div>
-        <div class="ramo" data-id="modulo2" data-prereq="modulo1">Módulo Integrado Interdisciplinario II</div>
-      </div>
-    </div>
-
