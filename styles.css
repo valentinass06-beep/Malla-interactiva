@@ -6,20 +6,33 @@ body {
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .malla {
   display: flex;
   gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
 }
 
 .semestre {
   background: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 260px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.semestre h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 5px 0;
 }
 
 .ramos {
@@ -28,14 +41,18 @@ h1 {
 }
 
 .ramo {
-  padding: 15px;
+  padding: 14px;
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
   background: #c4dafa;
   color: black;
   font-weight: bold;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
+}
+
+.ramo:hover:not(.bloqueado) {
+  transform: scale(1.03);
 }
 
 .ramo.aprobado {
