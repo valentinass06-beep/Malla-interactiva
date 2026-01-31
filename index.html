@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Medicina UChile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Malla Medicina – Universidad de Chile</h1>
+
+  <div class="malla">
+
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo" data-id="matematicas">Matemáticas</div>
+        <div class="ramo" data-id="quimica">Química</div>
+        <div class="ramo" data-id="anatomia1">Anatomía I</div>
+        <div class="ramo" data-id="intro_profesion">Introducción a la Profesión Médica</div>
+        <div class="ramo" data-id="med_sociedad">Medicina y Sociedad</div>
+      </div>
+    </div>
+
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo" data-id="fisica">Física</div>
+        <div class="ramo" data-id="biocel" data-prereq="quimica">Biología Celular y Molecular</div>
+        <div class="ramo" data-id="anatomia2" data-prereq="anatomia1">Anatomía II</div>
+        <div class="ramo" data-id="histo">Histología y Embriología</div>
+        <div class="ramo" data-id="med_persona" data-prereq="med_sociedad">Medicina, Persona y Sociedad</div>
+        <div class="ramo" data-id="salud_publica">Introducción a la Salud Pública</div>
+      </div>
+    </div>
+
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo" data-id="fisio1" data-prereq="fisica,biocel,anatomia2">Fisiología I</div>
+        <div class="ramo" data-id="bioquimica" data-prereq="biocel">Bioquímica</div>
+        <div class="ramo" data-id="genetica" data-prereq="biocel">Genética</div>
+        <div class="ramo" data-id="invest1">Unidad de Investigación I</div>
+        <div class="ramo" data-id="semiologia1" data-prereq="med_persona,intro_profesion">Semiología I</div>
+        <div class="ramo" data-id="bioetica">Bioética</div>
+        <div class="ramo" data-id="bioestadistica" data-prereq="matematicas">Bioestadística</div>
+      </div>
+    </div>
+
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo" data-id="fisio2" data-prereq="fisio1,bioquimica">Fisiología II</div>
+        <div class="ramo" data-id="inmunologia" data-prereq="genetica">Inmunología</div>
+        <div class="ramo" data-id="med_evolutiva" data-prereq="genetica">Medicina Evolutiva</div>
+        <div class="ramo" data-id="invest2" data-prereq="invest1">Unidad de Investigación II</div>
+        <div class="ramo" data-id="semiologia2" data-prereq="semiologia1,anatomia2">Semiología II</div>
+        <div class="ramo" data-id="casos1">Casos Integradores I</div>
+      </div>
+    </div>
+
+    <div class="semestre">
+      <h2>5° Semestre</h2>
+      <div class="ramos">
+        <div class="ramo" data-id="fisiopat1" data-prereq="fisio2">Fisiopatología I</div>
+        <div class="ramo" data-id="farmaco1" data-prereq="fisio2,bioquimica">Farmacología I</div>
+        <div class="ramo" data-id="agentes1" data-prereq="fisio2,inmunologia">Agentes Vivos de la Enfermedad I</div>
+        <div class="ramo" data-id="interna1" data-prereq="fisio2,semiologia2">Medicina Interna I</div>
+        <div class="ramo" data-id="etica1" data-prereq="bioetica">Ética Clínica I</div>
+        <div class="ramo" data-id="epidemio_desc" data-prereq="salud_publica,bioestadistica">Epidemiología Descriptiva</div>
+        <div class="ramo" data-id="modulo1">Módulo Integrado Interdisciplinario I</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
