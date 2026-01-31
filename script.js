@@ -1,8 +1,9 @@
 const ramos = document.querySelectorAll(".ramo");
-const estadoRamos = {};
+const estadoRamos = JSON.parse(localStorage.getItem("estadoRamos")) || {};
 
 ramos.forEach(ramo => {
-  estadoRamos[ramo.dataset.id] = false;
+  const id = ramo.dataset.id;
+  if (estadoRamos[id]) ramo.classList.add("aprobado");
 });
 
 function actualizarBloqueos() {
@@ -18,8 +19,10 @@ function actualizarBloqueos() {
 
     if (!cumplidos && !ramo.classList.contains("aprobado")) {
       ramo.classList.add("bloqueado");
+      ramo.title = "Prerrequisitos: " + prereq.replaceAll(",", ", ");
     } else {
       ramo.classList.remove("bloqueado");
+      ramo.title = "";
     }
   });
 }
@@ -31,6 +34,7 @@ ramos.forEach(ramo => {
     const id = ramo.dataset.id;
     ramo.classList.toggle("aprobado");
     estadoRamos[id] = ramo.classList.contains("aprobado");
+    localStorage.setItem("estadoRamos", JSON.stringify(estadoRamos));
     actualizarBloqueos();
   });
 });
